@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :channels, only: [:index, :show]
+
   resources :friends, only: [:index, :show]
 
   resources :users, only: [:index, :show]
